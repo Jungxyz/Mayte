@@ -1,0 +1,376 @@
+/**
+ * Code Sample for CSS for Wordpress 
+ * Custom Template 
+ * 
+ * By Min Jung
+ */
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {
+	font: normal 1em/1.875em 'Open Sans', sans-serif;
+	background-color: #fff;
+	color: #959595;
+	word-wrap: break-word;
+}
+a {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0 0 1.5em;
+	padding: 0;
+	line-height: 1.8em;
+}
+small {
+	font-size: .87em;
+}
+blockquote {
+	font: italic 1.1em/1.3em "Times New Roman", Times, serif;
+	padding: 8px 30px 15px;
+}
+
+
+
+/* LIST
+================================================ */
+ul, ol {
+	padding: 0;
+	line-height: 1.875em;
+}
+li {
+	margin: 0 0 .5em 0;
+	padding: 0;
+}
+
+/* HEADINGS
+================================================ */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: #000;
+	line-height: 1em;
+	margin: 20px 0 .4em;
+}
+h1 {
+	font-size: 1.875em;
+	margin: 0 0 .8em;
+}
+h2 {
+	font-size: 1.625em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0 0 .8em;
+}
+h3 {
+	font-size: 1.625em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0 0 .8em;
+}
+h4 {
+	font-family: inherit;
+	color: inherit;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	margin: 0 0 .8em;
+}
+h5 {
+	font-size: 1em;
+}
+h6 {
+	font-size: .875em;
+}
+
+/* FORM
+================================================ */
+/* form input */
+input, textarea, select, input[type=search], button {
+	font-size: 1em;
+	font-family: inherit;
+}
+textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url] {
+	background-color: #fff;
+	border: solid 1px #ddd;
+	padding: 6px 10px;
+	border-radius: 5px;
+	-webkit-appearance: none;
+}
+input[type=text], input[type=search], input[type=email], input[type=url] {
+	width: 240px;
+	max-width: 100%;
+
+}
+
+/* text area */
+textarea {
+	line-height: 1.5em;
+	width: 94%;
+}
+
+/* form input:focus */
+textarea:focus, input[type=text]:focus, input[type=password]:focus, input[type=search]:focus, input[type=email]:focus, input[type=url]:focus {
+	outline: none;
+	background-color: #fff;
+}
+
+/* form button */
+input[type=reset], input[type=submit], button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 7px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* form button:hover */
+input[type=reset]:hover, input[type=submit]:hover, button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+/* main page width */
+.pagewidth {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+/* body (middle container) */
+#body {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* content */
+#content {
+	width: 858px;
+	float: left;
+	padding: 3% 0 5%;
+}
+
+/* sidebar */
+#sidebar {
+	width: 252px;
+	float: right;
+	padding: 5% 0 3%;
+}
+
+/* sidebar left */
+.sidebar-left #content {
+	float: right;
+}
+.sidebar-left #sidebar {
+	float: left;
+}
+
+/* sidebar none */
+.sidebar-none #content {
+	width: 100%;
+	float: none;
+}
+
+/************************************************************************************
+GRID
+*************************************************************************************/
+.col4-1,
+.col4-2,
+.col4-3,
+.col3-1,
+.col3-2,
+.col2-1
+{
+	margin-left: 3.2%;
+	float: left;
+}
+.col4-1 {
+	width: 22.6%;
+}
+.col4-2, .col2-1 {
+	width: 48.4%;
+}
+.col4-3 {
+	width: 74.2%;
+}
+.col3-1 {
+	width: 31.2%;
+}
+.col3-2 {
+	width: 65.6%;
+}
+.col.first,
+.col4-1.first,
+.col4-2.first,
+.col4-3.first,
+.col3-1.first,
+.col3-2.first,
+.col2-1.first
+{
+	margin-left: 0;
+	clear: left;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#header {
+	position: relative;
+	text-align: center;
+	height: auto;
+	padding: 75px 0 45px;
+}
+
+/*
+SITE LOGO
+================================================ */
+#site-logo {
+	font: bold 3em/1em Montserrat, sans-serif;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+}
+#site-logo a {
+	text-decoration: none;
+}
+#site-logo a:hover {
+	text-decoration: none;
+}
+
+/*
+SITE DESCRIPTION
+================================================ */
+#site-description {
+	font: lighter 1em/1em 'Open Sans', sans-serif;
+	margin: 0 0 20px;
+	color: #959595;
+}
+
+/*
+MAIN NAVIGATION
+================================================ */
+#main-nav {
+	width: 100%;
+	margin: 40px 0 0;
+}
+#main-nav li {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 30px;
+	list-style: none;
+}
+
+/* main level link */
+#main-nav a {
+	font: normal .875em/1em Montserrat, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #959595;
+	padding: 5px 15px;
+	margin: 0 5px 0 0;
+	display: block;
+}
+#main-nav a:hover,
+#main-nav .current_page_item a,
+#main-nav .current-menu-item a,
+#main-nav .current_page_item a:hover,
+#main-nav .current-menu-item a:hover {
+	color: #000;
+}
+
+/* sub-levels link */
+#main-nav ul a,
+#main-nav .current_page_item ul a,
+#main-nav ul .current_page_item a,
+#main-nav .current-menu-item ul a,
+#main-nav ul .current-menu-item a {
+	color: #666;
+	font-size: .875em;
+	line-height: 1.2em;
+	font-weight: normal;
+	text-transform: none;
+	padding: 6px;
+	margin: 0;
+	display: block;
+	background: none;
+	border: none;
+}
+/* sub-levels link :hover */
+#main-nav ul a:hover,
+#main-nav .current_page_item ul a:hover,
+#main-nav ul .current_page_item a:hover,
+#main-nav .current-menu-item ul a:hover,
+#main-nav ul .current-menu-item a:hover {
+	background-color: #F3F3F3;
+	color: #000;
+}
+/* dropdown ul */
+#main-nav ul {
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	width: 200px;
+	margin: 15px 0 0 -100px;
+	padding: 5px 0;
+	background-color: #fff;
+	border: solid 1px #ccc;
+	list-style: none;
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+}
+#main-nav ul:before {
+	position: absolute;
+	display: block;
+	content: ' ';
+	width: 0;
+	height: 0;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+	border-bottom: 8px solid #ccc;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	z-index: -1;
+}
+#main-nav ul li {
+	background: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+/* sub-levels dropdown */
+#main-nav ul ul {
+	left: 100%;
+	top: -6px;
+	margin-left: 15px;
+	margin-top: 0;
+}
+#main-nav ul ul:before {
+	top: 11px;
+	left: -17px;
+	margin-left: 0;
+	border-right: 8px solid #ccc;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+
+/* show dropdown ul */
+#main-nav li:hover > ul {
+	visibility: visible;
+	margin-top: 0;
+	opacity: 1;
+}
+#main-nav ul li:hover > ul {
+	margin-left: 0;
+}
+
+/*
